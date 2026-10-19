@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FindLove</title>
-    <!-- 사이트 글꼴: Noto Sans KR(Google Fonts, SIL Open Font License, 상업적 사용 가능). 디자인 시안 Design_Ref -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- 렌더링을 막지 않게 늦게 붙인다(글꼴 서버가 느리거나 막힌 곳에서도 화면이 바로 뜨도록) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'" />
-    <!-- 공유 링크 미리보기(GAME_MODE.md 8절). 정적 HTML 이라 한국어 고정. 이미지는 npm run og:build 로 만든다. -->
-    <meta name="description" content="조건을 하나씩 고를 때마다 전 세계에서 남는 이상형이 줄어드는 걸 보세요." />
+    <title>나의 이상형 찾기</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://findluv.net/" />
+    <!-- 예전 주소(ovencub.github.io/findlove)로 공유된 링크의 미리보기: 새 주소의 이미지 -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="나의 이상형 찾기" />
     <meta property="og:title" content="나의 이상형 찾기 · 지구 위 내 이상형은 몇 명일까?" />
     <meta property="og:description" content="조건을 하나씩 고를 때마다 전 세계에서 남는 이상형이 줄어드는 걸 보세요." />
-    <meta property="og:image" content="https://ovencub.github.io/findlove/og.png?v=20261019" />
+    <meta property="og:image" content="https://findluv.net/og.png?v=20261019" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="/findlove/assets/index-g-mwwO44.js"></script>
-    <link rel="stylesheet" crossorigin href="/findlove/assets/index-D_vr-Ki9.css">
+    <script>
+      // 경로(/findlove 뒤)·쿼리(?r= 공유 결과 포함)·해시를 그대로 붙여 새 주소로
+      (function () {
+        var path = location.pathname.replace(/^\/findlove/, '') || '/';
+        location.replace('https://findluv.net' + path + location.search + location.hash);
+      })();
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=https://findluv.net/" /></noscript>
+    <style>
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #eaf1f4; color: #111; font-family: system-ui, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
+      a { color: #d6456b; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <p>새 주소로 옮겼어요. <a href="https://findluv.net/">https://findluv.net</a></p>
   </body>
 </html>
